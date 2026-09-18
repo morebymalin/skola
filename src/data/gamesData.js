@@ -17,7 +17,7 @@
 export const skattjakter = [
   {
     id: 5,
-    name: "SPÖKFESTEN - YNGRE BARN",
+    name: "SPÖKFESTEN - YNGRE BARNE",
     shuffleQuestions: true,
     introImg: "/skattjakt/spokfesten/spokfesten1.jpg",
     finishImg: "/skattjakt/spokfesten/slutbildspokfesten.jpg",

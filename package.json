@@ -2,7 +2,7 @@
   "name": "quiz-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://morebymalin.github.io/games",
+  "homepage": "https://morebymalin.github.io/skola",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
