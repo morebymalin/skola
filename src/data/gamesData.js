@@ -490,6 +490,58 @@ export const escapeGames = [
 
   // Advent Escape Games
   {
+    id: 101,
+    name: "Skola: Mattejakten i korridoren",
+    category: "skola",
+    win: "Klassens mattebricka är räddad! Ni räknade smart, såg mönster och höll ihop laget hela vägen.",
+    rooms: [
+      { id: 1, name: "Hemligt tal", img: "/escape/hittapaskharen/skola.jpg", type: "number", answer: "42", instruction: "Bra jobbat! Ledtråd: 6 x 7 kan också vara sex grupper med sju i varje." },
+      { id: 2, name: "Multiplikationslåset", img: "/escape/sverigeshistoria/skolan.jpg", type: "number", answer: "56", instruction: "Snyggt! Ledtråd: 8 x 7 = 56." },
+      { id: 3, name: "Former på väggen", img: "/escape/sverigeshistoria/stockholm.jpg", type: "symbols", allowedSymbols: ["triangle", "square", "circle", "star"], answerSequence: ["triangle", "square", "circle"], instruction: "Rätt! Tre hörn, fyra hörn och sedan inga hörn." },
+      { id: 4, name: "Bråk-koden", img: "/escape/lagenheten/bokhyllan.jpg", type: "number", answer: "75", instruction: "Yes! Tre fjärdedelar är samma som 75 av 100." }
+    ]
+  },
+
+  {
+    id: 102,
+    name: "Skola: Svenska mysteriet",
+    category: "skola",
+    win: "Orden föll på plats! Ni hittade vokaler, sammansatta ord och läste mellan raderna.",
+    rooms: [
+      { id: 1, name: "Vokalvalvet", img: "/escape/hittapaskharen/bibliotek.jpg", type: "letters", answer: "AEIOUYÅÄÖ", instruction: "Rätt! Det är vokalerna i alfabetet." },
+      { id: 2, name: "Sammansatta ord", img: "/escape/juliussonreserivag/bokhyllan1.jpg", type: "letters", answer: "SKOLBOK", instruction: "Bra! Skola + bok blir skolbok." },
+      { id: 3, name: "Rimrummet", img: "/escape/adventhosjuliusson/bokhandel.jpg", type: "letters", answer: "HUS", instruction: "Rätt! Hus rimmar på mus." },
+      { id: 4, name: "Meningsnyckeln", img: "/escape/lagenheten/skrivbordet.jpg", type: "letters", answer: "PUNKT", instruction: "Klockrent! En mening avslutas ofta med punkt." }
+    ]
+  },
+
+  {
+    id: 103,
+    name: "Skola: NO-labbet",
+    category: "skola",
+    win: "Experimentet lyckades! Ni löste naturfrågorna med nyfikna hjärnor och noggranna svar.",
+    rooms: [
+      { id: 1, name: "Vattnets resa", img: "/escape/hittapaskharen/fabrik.jpg", type: "letters", answer: "ÅNGA", instruction: "Rätt! När vatten värms kan det bli ånga." },
+      { id: 2, name: "Magnetbordet", img: "/escape/lagenheten/skrivbordet.jpg", type: "letters", answer: "JÄRN", instruction: "Bra! Magneter drar ofta till sig järn." },
+      { id: 3, name: "Näringskedjan", img: "/escape/hittapaskharen/park.jpg", type: "symbols", allowedSymbols: ["flower", "triangle", "star"], answerSequence: ["flower", "triangle", "star"], instruction: "Rätt ordning: växt, djur och energi vidare." },
+      { id: 4, name: "Planeträkningen", img: "/escape/sverigeshistoria/vikingaskeppet.jpg", type: "number", answer: "8", instruction: "Rätt! I vårt solsystem räknar vi åtta planeter." }
+    ]
+  },
+
+  {
+    id: 104,
+    name: "Skola: SO-tidsresan",
+    category: "skola",
+    win: "Tidslinjen är lagad! Ni följde kartor, källor och spår genom både tid och plats.",
+    rooms: [
+      { id: 1, name: "Kartkoden", img: "/escape/sverigeshistoria/stockholm.jpg", type: "letters", answer: "NORR", instruction: "Rätt! På många kartor pekar uppåt mot norr." },
+      { id: 2, name: "Källkritik", img: "/escape/sverigeshistoria/protester.jpg", type: "letters", answer: "KÄLLA", instruction: "Bra! En källa berättar var informationen kommer ifrån." },
+      { id: 3, name: "Demokratiska dörren", img: "/escape/sverigeshistoria/kyrkan.jpg", type: "letters", answer: "RÖSTA", instruction: "Rätt! Att rösta är en viktig del av demokrati." },
+      { id: 4, name: "Årtalslåset", img: "/escape/sverigeshistoria/vasasslott.jpg", type: "number", answer: "1523", instruction: "Snyggt! 1523 är ett vanligt startår för Vasatiden." }
+    ]
+  },
+
+  {
     id: 7,
     name: "Advent hos familjen Juliusson - Första advent",
     category: "advent",

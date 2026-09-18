@@ -1,16 +1,16 @@
 /* Gemensam layout för EscapeRoom & Skattjakt */
 :root {
-  --color-primary: #a259ff;
-  --color-primary-dark: #6a1b9a;
+  --color-primary: #0f8f8c;
+  --color-primary-dark: #07515f;
   --color-surface: #ffffff;
   --radius-lg: 18px;
   --radius-md: 14px;
   --radius-sm: 10px;
-  --shadow-sm: 0 2px 8px rgba(162, 89, 255, 0.10);
-  --shadow-lg: 0 4px 16px rgba(162, 89, 255, 0.18);
-  --gradient-bg: linear-gradient(135deg, #a259ff 0%, #6a1b9a 100%);
-  --btn-gradient: linear-gradient(90deg, #b47cff 0%, #7c43bd 100%);
-  --btn-gradient-hover: linear-gradient(90deg, #7c43bd 0%, #b47cff 100%);
+  --shadow-sm: 0 2px 8px rgba(7, 81, 95, 0.12);
+  --shadow-lg: 0 4px 18px rgba(7, 81, 95, 0.20);
+  --gradient-bg: linear-gradient(135deg, #0f8f8c 0%, #f6c85f 58%, #f58f7c 100%);
+  --btn-gradient: linear-gradient(90deg, #0f8f8c 0%, #0b6f82 100%);
+  --btn-gradient-hover: linear-gradient(90deg, #f6c85f 0%, #f58f7c 100%);
   --spacing: 16px;
   --block-vmargin: calc(var(--spacing) * 1.1);
   --block-padding: 24px 22px;

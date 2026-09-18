@@ -94,7 +94,7 @@ h2 {
 .back-btn:active { transform: scale(.96); }
 
 .back-btn:hover {
-  background: #a259ff;
+  background: var(--color-primary);
   color: #fff;
 }
 

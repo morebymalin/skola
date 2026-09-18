@@ -2,9 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Home.css";
 import { escapeGames, skattjakter } from "../data/gamesData";
 
-// Filter out advent escape games
+// Filter out escape game categories
 const adventEscapeGames = escapeGames.filter(g => g.category === "advent");
-const normalEscapeGames = escapeGames.filter(g => g.category !== "advent");
+const schoolEscapeGames = escapeGames.filter(g => g.category === "skola");
+const normalEscapeGames = escapeGames.filter(g => g.category !== "advent" && g.category !== "skola");
 
 function Home({ setPage, setSelectedSkattjakt, setSelectedEscapeGame }) {
   // 'skatt' | 'escape' | null
@@ -13,9 +14,11 @@ function Home({ setPage, setSelectedSkattjakt, setSelectedEscapeGame }) {
   const skattBtnRef = useRef(null);
   const escapeBtnRef = useRef(null);
   const adventBtnRef = useRef(null);
+  const schoolBtnRef = useRef(null);
   const skattListRef = useRef(null);
   const escapeListRef = useRef(null);
   const adventListRef = useRef(null);
+  const schoolListRef = useRef(null);
 
   const toggleDropdown = (key) => {
     setOpenDropdown(prev => prev === key ? null : key);
@@ -37,6 +40,10 @@ function Home({ setPage, setSelectedSkattjakt, setSelectedEscapeGame }) {
         if (adventBtnRef.current && adventBtnRef.current.contains(e.target)) return;
         if (adventListRef.current && adventListRef.current.contains(e.target)) return;
         setOpenDropdown(null);
+      } else if (openDropdown === 'skola') {
+        if (schoolBtnRef.current && schoolBtnRef.current.contains(e.target)) return;
+        if (schoolListRef.current && schoolListRef.current.contains(e.target)) return;
+        setOpenDropdown(null);
       }
     };
     document.addEventListener('mousedown', handleGlobal);
@@ -50,8 +57,8 @@ function Home({ setPage, setSelectedSkattjakt, setSelectedEscapeGame }) {
   return (
   <div className="home-container">
       <h1>
-        Välkommen<br />
-        <span className="byline">MoreByMalin</span>
+        MoreByMalin Skola<br />
+        <span className="byline">spel, klurigheter och lärande</span>
       </h1>
       <div className="options">
         <div className="dropdown">
@@ -121,6 +128,32 @@ function Home({ setPage, setSelectedSkattjakt, setSelectedEscapeGame }) {
                 <button
                   key={game.id}
                   className="dropdown-item"
+                  onClick={() => {
+                    setSelectedEscapeGame(game.id);
+                    setPage("escapeMenu");
+                  }}
+                >
+                  {game.name}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="dropdown">
+          <button
+            ref={schoolBtnRef}
+            className="home-btn school-btn"
+            onClick={() => toggleDropdown('skola')}
+            aria-expanded={openDropdown === 'skola'}
+          >
+            Skola
+          </button>
+          {openDropdown === 'skola' && (
+            <div ref={schoolListRef} className="dropdown-list">
+              {schoolEscapeGames.map((game) => (
+                <button
+                  key={game.id}
+                  className="dropdown-item school-item"
                   onClick={() => {
                     setSelectedEscapeGame(game.id);
                     setPage("escapeMenu");
