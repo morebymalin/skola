@@ -82,8 +82,8 @@
 
 .hint-popup {
   margin-top: 12px;
-  background: linear-gradient(145deg,#ffffff,#f5f0ff);
-  border: 2px solid #e2d6f6;
+  background: linear-gradient(145deg,#ffffff,#eef8ff);
+  border: 2px solid #cde8fb;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
   font-size: .85rem;
@@ -122,8 +122,8 @@
   max-width: 186px;
 }
 .pair-box {
-  background: linear-gradient(145deg,#ffffff,#f7f2ff);
-  border: 2px solid #e2d6f6;
+  background: linear-gradient(145deg,#ffffff,#eef8ff);
+  border: 2px solid #cde8fb;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-sm);
   padding: 6px;
@@ -138,9 +138,9 @@
 .pair-box img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-sm); }
 .word-box { font-weight: 700; font-size: .9rem; letter-spacing: .5px; }
 .word-box .word-label { text-transform: uppercase; }
-.pair-box.selected { border-color: var(--color-primary); background: linear-gradient(145deg,#f3e6ff,#ede0ff); box-shadow: 0 4px 14px rgba(162,89,255,0.25); }
+.pair-box.selected { border-color: var(--color-primary); background: linear-gradient(145deg,#dff2ff,#cde8fb); box-shadow: 0 4px 14px rgba(11,63,102,0.25); }
 .pair-box.used { opacity: .45; cursor: default; filter: grayscale(30%); }
-.pair-box:hover:not(.used):not(.selected) { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(162,89,255,0.20); }
+.pair-box:hover:not(.used):not(.selected) { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(11,63,102,0.20); }
 
 /* Compact matches */
 
@@ -176,7 +176,7 @@
   box-shadow: var(--shadow-sm);
   color: var(--color-primary-dark);
 }
-.helper-text.ready { background: #f3e6ff; }
+.helper-text.ready { background: #dff2ff; }
 .clear-selection-btn {
   background: #fff;
   border: 2px solid var(--color-primary);
@@ -220,12 +220,12 @@
   min-width: 160px;
 }
 .pair-card-img, .pair-card-word {
-  background: linear-gradient(135deg,#ffffff,#f8f3ff);
+  background: linear-gradient(135deg,#ffffff,#eef8ff);
   border-radius: var(--radius-sm);
   padding: 12px 16px;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
-  border: 2px solid #e5d9f9;
+  border: 2px solid #cde8fb;
   font-weight: 600;
   letter-spacing: .4px;
   display: flex;
@@ -236,8 +236,8 @@
   transition: border .18s, background .25s, transform .15s, box-shadow .25s;
 }
 .pair-card-img.used, .pair-card-word.used { opacity: .44; cursor: default; filter: grayscale(30%); }
-.pair-card-img.selected, .pair-card-word.selected { border-color: var(--color-primary); background: linear-gradient(135deg,#f3e6ff,#ede0ff); box-shadow: 0 4px 14px rgba(162,89,255,0.25); }
-.pair-card-img:hover:not(.used):not(.selected), .pair-card-word:hover:not(.used):not(.selected) { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(162,89,255,0.22); }
+.pair-card-img.selected, .pair-card-word.selected { border-color: var(--color-primary); background: linear-gradient(135deg,#dff2ff,#cde8fb); box-shadow: 0 4px 14px rgba(11,63,102,0.25); }
+.pair-card-img:hover:not(.used):not(.selected), .pair-card-word:hover:not(.used):not(.selected) { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(11,63,102,0.22); }
 .pair-card-img img { width: 54px; height: 54px; object-fit: cover; border-radius: 12px; }
 .pair-images-grid .pair-card-img { min-height: 90px; }
 /* Overlay text when image missing */
@@ -325,7 +325,7 @@
   transition: color .2s;
 }
 .remove-pair-btn:hover { color: var(--color-primary-dark); }
-.remove-pair-btn:active { color: #6a1b9a; }
+.remove-pair-btn:active { color: #062f4f; }
 
 /* Finish styles (question-box base i GameShared.css) */
 .finish-box {
@@ -343,7 +343,7 @@
   font-size: 2rem;
   margin: 0 0 12px;
   font-weight: 800;
-  background: linear-gradient(90deg,#a259ff,#6a1b9a);
+  background: linear-gradient(90deg,#1976b8,#0b3f66);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -370,12 +370,12 @@
   top: -10px;
   width: 10px;
   height: 14px;
-  background: #a259ff;
+  background: #1976b8;
   border-radius: 2px;
   animation: fall 3.4s linear infinite;
 }
-.confetti span:nth-child(3n) { background: #6a1b9a; }
-.confetti span:nth-child(4n) { background: #b47cff; }
+.confetti span:nth-child(3n) { background: #0b3f66; }
+.confetti span:nth-child(4n) { background: #67b9df; }
 .confetti span:nth-child(even) { animation-duration: 2.8s; }
 .confetti span:nth-child(odd) { animation-duration: 3.8s; }
 @keyframes fall {
