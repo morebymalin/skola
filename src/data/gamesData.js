@@ -763,7 +763,7 @@ export const escapeGames = [
     category: "skola",
     win: "Wow! Ni har samarbetat och klurat och lyckades att ta er ut från skolan innan larmet gick igång!",
     rooms: [
-      { id: 1, name: "Bänk 1", img: "/escape/halloweenskola/elevbank1.jpg", type: "number", answer: "02468", instruction: "Bra jobbat! Ni får bokstaven H." },
+      { id: 1, name: "Elevbänk 1", img: "/escape/halloweenskola/elevbank1.jpg", type: "number", answer: "02468", instruction: "Bra jobbat! Ni får bokstaven H." },
       { id: 2, name: "Fönstret", img: "/escape/halloweenskola/fonster1.jpg", type: "letters", answer: "DLOÅÄÖ", instruction: "Bra jobbat! Ni får bokstaven L." },
       { id: 3, name: "Grupprum", img: "/escape/halloweenskola/grupprum.jpg", type: "symbols", allowedSymbols: ["triangle", "square", "circle", "star", "heart"], answerSequence: ["square", "circle", "triangle", "star", "heart"], instruction: "Bra jobbat! Ni får bokstaven O." },
       { id: 4, name: "Korridoren", img: "/escape/halloweenskola/korridoren.jpg", type: "colors", "allowedColors": ["yellow", "green", "orange", "red", "pink", "blue"], "answerSequence": ["green", "yellow", "red", "orange"], instruction: "Bra jobbat! Ni får bokstaven U." },
@@ -772,9 +772,9 @@ export const escapeGames = [
       { id: 7, name: "Mattan", img: "/escape/halloweenskola/mattanklassrum.jpg", type: "symbols", allowedSymbols: ["triangle", "square", "circle", "star"], answerSequence: ["triangle", "star", "square", "circle"], instruction: "Bra jobbat! Ni får bokstaven E." },
       { id: 8, name: "Klassrumsdörr", img: "/escape/halloweenskola/klassrumdorr.jpg", type: "letters", answer: ["SPÖKE", "SPÖKSLOTT"], instruction: "Bra jobbat! Ni får bokstaven W." },      
       { id: 9, name: "Lärarbord", img: "/escape/halloweenskola/lararbord.jpg", type: "colors", "allowedColors": ["yellow", "green", "orange", "red", "pink", "blue"], "answerSequence": ["red", "yellow", "blue", "green", "pink"], instruction: "Bra jobbat! Ni får bokstaven N." },
-      { id: 10, name: "Bänk 3", img: "/escape/halloweenskola/elevbank3.jpg", type: "number", answer: ["1322", "4875"], instruction: "Bra jobbat! Ni får bokstaven L." },
+      { id: 10, name: "Elevbänk 3", img: "/escape/halloweenskola/elevbank3.jpg", type: "number", answer: ["1322", "4875"], instruction: "Bra jobbat! Ni får bokstaven L." },
       { id: 11, name: "Vattenkranen", img: "/escape/halloweenskola/vattenkran.jpg", type: "number", answer: "61218", instruction: "Bra jobbat! Ni får bokstaven E." },
-      { id: 12, name: "Bänk 2", img: "/escape/halloweenskola/elevbank2.jpg", type: "colors", "allowedColors": ["yellow", "green", "orange", "red", "pink", "blue"], "answerSequence": ["blue", "red", "green", "pink", "yellow"], instruction: "Bra jobbat! Ni får bokstaven A." },
+      { id: 12, name: "Elevbänk 2", img: "/escape/halloweenskola/elevbank2.jpg", type: "colors", "allowedColors": ["yellow", "green", "orange", "red", "pink", "blue"], "answerSequence": ["blue", "red", "green", "pink", "yellow"], instruction: "Bra jobbat! Ni får bokstaven A." },
       { id: 13, name: "Dörren ut", img: "/escape/halloweenskola/dorrenutskola.jpg", type: "letters", answer: "HALLOWEEN", instruction: "Bra jobbat!" }
     ]
   },
