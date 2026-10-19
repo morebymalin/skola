@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/skola/static/css/main.d874bc52.css",
-    "main.js": "/skola/static/js/main.f2ec665c.js",
+    "main.js": "/skola/static/js/main.93ce5015.js",
     "index.html": "/skola/index.html",
     "main.d874bc52.css.map": "/skola/static/css/main.d874bc52.css.map",
-    "main.f2ec665c.js.map": "/skola/static/js/main.f2ec665c.js.map"
+    "main.93ce5015.js.map": "/skola/static/js/main.93ce5015.js.map"
   },
   "entrypoints": [
     "static/css/main.d874bc52.css",
-    "static/js/main.f2ec665c.js"
+    "static/js/main.93ce5015.js"
   ]
 }
