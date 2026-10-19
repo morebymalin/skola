@@ -759,7 +759,7 @@ export const escapeGames = [
 
   {
     id: 105,
-    name: "Escape room Halloween",
+    name: "Escape room Furulund",
     category: "skola",
     win: "Wow! Ni har samarbetat och klurat och lyckades att ta er ut från skolan innan larmet gick igång!",
     rooms: [
