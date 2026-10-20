@@ -76,9 +76,10 @@ function EscapeRoom({ escapeGames, escapeGameId, roomId, goBack, markRoomSolved,
   }
 
   const checkAnswer = () => {
-    const expected = String(room.answer || "").trim().toLowerCase();
+    const answers = Array.isArray(room.answer) ? room.answer : [room.answer];
     const given = String(answer).trim().toLowerCase();
-    if (given === expected) {
+    const isCorrect = answers.some(expected => given === String(expected || "").trim().toLowerCase());
+    if (isCorrect) {
       setResult("Rätt!");
       markRoomSolved?.(escapeGameId, roomId);
     } else {
