@@ -726,7 +726,7 @@ export const escapeGames = [
       { id: 10, name: "Elevbänk 3", img: "/escape/halloweenskola/elevbank3.jpg", type: "number", answer: ["1322", "4875"], instruction: "Bra jobbat! Ni får bokstaven L." },
       { id: 11, name: "Vattenkranen", img: "/escape/halloweenskola/vattenkran.jpg", type: "number", answer: "61218", instruction: "Bra jobbat! Ni får bokstaven E." },
       { id: 12, name: "Elevbänk 2", img: "/escape/halloweenskola/elevbank2.jpg", type: "colors", "allowedColors": ["yellow", "green", "orange", "red", "pink", "blue"], "answerSequence": ["blue", "red", "green", "pink", "yellow"], instruction: "Bra jobbat! Ni får bokstaven A." },
-      { id: 13, name: "Dörren ut", img: "/escape/halloweenskola/dorrenutskola.jpg", type: "letters", answer: "HALLOWEEN", instruction: "Bra jobbat!" }
+      { id: 13, name: "Dörren ut", img: "/escape/halloweenskola/dorrenutskola.jpg", type: "letters", answer: "HALLOWEENKUL", instruction: "Bra jobbat!" }
     ]
   },
 
